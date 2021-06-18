@@ -1,0 +1,17 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.rulers": [
+    119
+  ],
+  "files.associations": {
+    ".coveragerc": "ini"
+  },
+  "python.envFile": "${workspaceFolder}/.vscode/env",
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "python.pythonPath": ".venv/bin/python",
+  "python.testing.pytestEnabled": true,
+  "python.workspaceSymbols.enabled": true
+}

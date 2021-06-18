@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+set -u
+set -x
+
+readonly SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+cd "${SCRIPT_DIR}/.."
+
+if [[ -L .git/hooks ]] ; then
+  rm .git/hooks
+fi
+
+if command -v pre-commit > /dev/null; then
+    pre-commit install --install-hooks
+else
+    poetry run pre-commit install --install-hooks
+fi
