@@ -20,7 +20,7 @@ pythonpath = [
 
 [tool.poetry]
 name = "fernet-encrypt"
-version = "1.0.2"
+version = "1.0.3"
 description = "Fernet Encryption CLI tool"
 authors = ["Tyson Holub <tyson@tysonholub.com>"]
 license = "MIT"
@@ -31,7 +31,7 @@ include = ["LICENSE"]
 [tool.poetry.dependencies]
 python = "^3.10"
 cryptography = "^39.0.2"
-typer = "^0.7.0"
+typer = "^0.9"
 
 [tool.poetry.group.dev.dependencies]
 coverage = "^6.4.0"
